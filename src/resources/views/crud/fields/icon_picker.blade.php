@@ -74,13 +74,13 @@
         {{-- The chosen font --}}
         <link rel="stylesheet" type="text/css" href="{{ $field['font_icon_file_path'] }}">
         <!-- Bootstrap-Iconpicker -->
-        <link rel="stylesheet" href="{{ asset('packages/bootstrap-iconpicker/bootstrap-iconpicker/css/bootstrap-iconpicker.min.css') }}"/>
+        <link rel="stylesheet" href="{{ external_asset('packages/bootstrap-iconpicker/bootstrap-iconpicker/css/bootstrap-iconpicker.min.css') }}"/>
     @endpush
 
     {{-- FIELD EXTRA JS --}}
     @push('crud_fields_scripts')
         <!-- Bootstrap-Iconpicker -->
-        <script type="text/javascript" src="{{ asset('packages/bootstrap-iconpicker/bootstrap-iconpicker/js/bootstrap-iconpicker.bundle.min.js') }}"></script>
+        <script type="text/javascript" src="{{ external_asset('packages/bootstrap-iconpicker/bootstrap-iconpicker/js/bootstrap-iconpicker.bundle.min.js') }}"></script>
 
         {{-- Bootstrap-Iconpicker - set hidden input value --}}
         <script>

@@ -38,9 +38,9 @@
             data-init-function="bpFieldInitTableElement"
             name="{{ $field['name'] }}"
             value="{{ $items }}"
-            data-max="{{$max}}" 
-            data-min="{{$min}}" 
-            data-maxErrorTitle="{{trans('backpack::crud.table_cant_add', ['entity' => $item_name])}}" 
+            data-max="{{$max}}"
+            data-min="{{$min}}"
+            data-maxErrorTitle="{{trans('backpack::crud.table_cant_add', ['entity' => $item_name])}}"
             data-maxErrorMessage="{{trans('backpack::crud.table_max_reached', ['max' => $max])}}">
 
     <div class="array-container form-group">
@@ -102,7 +102,7 @@
     {{-- FIELD JS - will be loaded in the after_scripts section --}}
     @push('crud_fields_scripts')
         {{-- YOUR JS HERE --}}
-        <script type="text/javascript" src="{{ asset('packages/jquery-ui-dist/jquery-ui.min.js') }}"></script>
+        <script type="text/javascript" src="{{ external_asset('packages/jquery-ui-dist/jquery-ui.min.js') }}"></script>
 
         <script>
             function bpFieldInitTableElement(element) {

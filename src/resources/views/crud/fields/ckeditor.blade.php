@@ -38,8 +38,8 @@
 
     {{-- FIELD JS - will be loaded in the after_scripts section --}}
     @push('crud_fields_scripts')
-        <script src="{{ asset('packages/ckeditor/ckeditor.js') }}"></script>
-        <script src="{{ asset('packages/ckeditor/adapters/jquery.js') }}"></script>
+        <script src="{{ external_asset('packages/ckeditor/ckeditor.js') }}"></script>
+        <script src="{{ external_asset('packages/ckeditor/adapters/jquery.js') }}"></script>
         <script>
             function bpFieldInitCKEditorElement(element) {
                 // remove any previous CKEditors from right next to the textarea

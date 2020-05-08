@@ -71,13 +71,13 @@
 
     {{-- FIELD CSS - will be loaded in the after_styles section --}}
     @push('crud_fields_styles')
-    <link rel="stylesheet" type="text/css" href="{{ asset('packages/bootstrap-daterangepicker/daterangepicker.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ external_asset('packages/bootstrap-daterangepicker/daterangepicker.css') }}" />
     @endpush
 
     {{-- FIELD JS - will be loaded in the after_scripts section --}}
     @push('crud_fields_scripts')
-    <script type="text/javascript" src="{{ asset('packages/moment/min/moment.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('packages/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
+    <script type="text/javascript" src="{{ external_asset('packages/moment/min/moment.min.js') }}"></script>
+    <script type="text/javascript" src="{{ external_asset('packages/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
     <script>
         function bpFieldInitDateRangeElement(element) {
                 var $visibleInput = element;
@@ -117,4 +117,3 @@
 
 @endif
 {{-- End of Extra CSS and JS --}}
-

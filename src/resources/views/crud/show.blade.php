@@ -92,11 +92,11 @@
 
 
 @section('after_styles')
-	<link rel="stylesheet" href="{{ asset('packages/backpack/crud/css/crud.css') }}">
-	<link rel="stylesheet" href="{{ asset('packages/backpack/crud/css/show.css') }}">
+	<link rel="stylesheet" href="{{ external_asset('packages/backpack/crud/css/crud.css') }}">
+	<link rel="stylesheet" href="{{ external_asset('packages/backpack/crud/css/show.css') }}">
 @endsection
 
 @section('after_scripts')
-	<script src="{{ asset('packages/backpack/crud/js/crud.js') }}"></script>
-	<script src="{{ asset('packages/backpack/crud/js/show.js') }}"></script>
+	<script src="{{ external_asset('packages/backpack/crud/js/crud.js') }}"></script>
+	<script src="{{ external_asset('packages/backpack/crud/js/show.js') }}"></script>
 @endsection

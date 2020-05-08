@@ -218,15 +218,15 @@ function tree_element($entry, $key, $all_entries, $crud)
       color: #c33;
     }
 </style>
-<link rel="stylesheet" href="{{ asset('packages/backpack/crud/css/crud.css') }}">
-<link rel="stylesheet" href="{{ asset('packages/backpack/crud/css/reorder.css') }}">
+<link rel="stylesheet" href="{{ external_asset('packages/backpack/crud/css/crud.css') }}">
+<link rel="stylesheet" href="{{ external_asset('packages/backpack/crud/css/reorder.css') }}">
 @endsection
 
 @section('after_scripts')
-<script src="{{ asset('packages/backpack/crud/js/crud.js') }}" type="text/javascript" ></script>
-<script src="{{ asset('packages/backpack/crud/js/reorder.js') }}" type="text/javascript" ></script>
-<script src="{{ asset('packages/jquery-ui-dist/jquery-ui.min.js') }}" type="text/javascript" ></script>
-<script src="{{ asset('packages/nestedSortable/jquery.mjs.nestedSortable2.js') }}" type="text/javascript" ></script>
+<script src="{{ external_asset('packages/backpack/crud/js/crud.js') }}" type="text/javascript" ></script>
+<script src="{{ external_asset('packages/backpack/crud/js/reorder.js') }}" type="text/javascript" ></script>
+<script src="{{ external_asset('packages/jquery-ui-dist/jquery-ui.min.js') }}" type="text/javascript" ></script>
+<script src="{{ external_asset('packages/nestedSortable/jquery.mjs.nestedSortable2.js') }}" type="text/javascript" ></script>
 
 <script type="text/javascript">
     jQuery(document).ready(function($) {
